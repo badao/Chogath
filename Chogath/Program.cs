@@ -179,8 +179,6 @@ namespace Chogath
                        {
                            if (hero.Health <= dmg)
                            {
-
-                               Game.PrintChat(hero.SkinName);
                                Render.Circle.DrawCircle(hero.Position, 100, Color.Green);
                                if (Player.Distance(hero.Position) <= Player.BoundingRadius + hero.BoundingRadius + 125 + 30 && hero.IsValidTarget())
                                    Player.IssueOrder(GameObjectOrder.MoveTo, hero.Position);
