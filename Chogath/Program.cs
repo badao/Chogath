@@ -213,6 +213,10 @@ namespace Chogath
             {
                 Q.Cast(pos);
             }
+            if (Player.Distance(target.Position) <= Player.BoundingRadius + Player.AttackRange + target.BoundingRadius)
+            {
+                Q.Cast(pos);
+            }
         }
         public static void castW(Obj_AI_Base target)
         {
